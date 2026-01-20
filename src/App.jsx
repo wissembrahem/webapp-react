@@ -1,13 +1,22 @@
-import Header from "./components/Header"
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import Header from "./components/Header";
+import AppLayout from "./layouts/appLayout";
+import Home from "./pages/Home";
+import MoviesList from "./pages/MoviesList";
 
 
 function App() {
-
-
+  const videoRental = "Video Rental"
   return (
     <>
-    <Header/>
-    <h1>HELLO WORD</h1>
+      <BrowserRouter >
+      <Routes>
+        <Route element={<AppLayout videoRental={videoRental} />}>
+        <Route element={<Home />} path="/" />
+        <Route element={<MoviesList />} path="/movies"/>
+        </Route>
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }
