@@ -1,5 +1,4 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom"
-import Header from "./components/Header";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import AppLayout from "./layouts/appLayout";
 import Home from "./pages/Home";
 import MoviesList from "./pages/MoviesList";

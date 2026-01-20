@@ -1,0 +1,7 @@
+.home-bg {
+    background-image: url(./assets/moviesrental.png);
+    min-height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 export default function Header({ videoRental }) {
     const headerLinks = [
         { title: "Home", path: "/" },
@@ -16,9 +18,9 @@ export default function Header({ videoRental }) {
                         <ul className="navbar-nav">
                             {headerLinks.map((link, index) => (
                                 <li className="nav-item" key={index}>
-                                    <a className="nav-link active" aria-current="page" href={link.path}>
+                                    <NavLink className="nav-link active" aria-current="page" to={link.path}>
                                         {link.title}
-                                    </a>
+                                    </NavLink>
                                 </li>
                             ))}
 
